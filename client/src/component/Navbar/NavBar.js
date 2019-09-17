@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './NavBar.scss';
+import {Link} from 'react-scroll';
 
 export default class NavBar extends Component {
     constructor(props) {
@@ -16,10 +17,9 @@ export default class NavBar extends Component {
             const isTop = window.scrollY < 300;
             if (isTop === true) {
                 this.setState({ onscroll: false });
-                console.log(this.state.onscroll);
+
             } else {
                 this.setState({ onscroll: true });
-                console.log(this.state.onscroll);
             }
         });
     }
@@ -29,12 +29,38 @@ export default class NavBar extends Component {
     render() {
         return (
             <nav className={this.state.onscroll ? "navbar bg-dark scrolled" : "navbar bg-dark"}>
-
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contact">Contact</a></li>
+                <ul >
+                    <li className='nav-item'>
+                    <Link
+                        activeClass="active"
+                        to="home" spy={true}
+                        smooth={true} offset={0}
+                        duration={500}
+                    >HOME</Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link
+                        activeClass="active"
+                        to="about" spy={true}
+                        smooth={true} offset={0}
+                        duration={500}
+                    >ABOUT</Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link
+                        activeClass="active"
+                        to="project" spy={true}
+                        smooth={true} offset={0}
+                        duration={500}
+                    >PROJECTS</Link>
+                    </li>
+                    <li className='nav-item'><Link
+                        activeClass="active"
+                        to="contact" spy={true}
+                        smooth={true} offset={0}
+                        duration={500}
+                    >CONTACT</Link>
+                    </li>
                 </ul>
             </nav>
         )

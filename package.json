@@ -22,6 +22,7 @@
     "moongoose": "0.0.5",
     "node-sass": "^4.12.0",
     "react-particles-js": "^2.7.0",
+    "react-scroll": "^1.7.14",
     "request": "^2.88.0"
   },
   "devDependencies": {

@@ -7,8 +7,7 @@ import MilkyWay from '../../video/MilkyWay.mov';
 export default class WebIntro extends Component {
     render() {
         return (
-            <section id="section1">
-                <div className="webintro v-header container">
+                <div id='home' className="webintro v-header container">
 
                     <div className='fullscreen-video-wrap'>
                         <video src={MilkyWay} autoPlay={true} loop={true}></video>
@@ -21,8 +20,6 @@ export default class WebIntro extends Component {
                         <a href="#" className="btn">See more</a>
                     </div>
                 </div>
-            </section>
-
         )
     }
 }

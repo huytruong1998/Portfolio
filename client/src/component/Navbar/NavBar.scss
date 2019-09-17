@@ -25,15 +25,14 @@ $max-width: 1100px;
 }
 
 .scrolled {
-    background: #4A5065;
-    opacity: 0.85;
+    background: #1B242F;
+    opacity: 1;
 }
 
 .navbar {
     transition: all 1s ease 0s;
 
-    font-family: 'Raleway',
-        sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
     color: #333;
@@ -45,7 +44,7 @@ $max-width: 1100px;
     z-index: 3;
     width: 100%;
     top: 0;
-    font-weight: bold;
+ 
 
     a {
         text-decoration: none;
@@ -55,6 +54,7 @@ $max-width: 1100px;
 
         &:hover {
             color: $primary-color;
+            cursor: pointer;
         }
     }
 
@@ -74,4 +74,8 @@ $max-width: 1100px;
         color: #fff;
 
     }
+}
+
+.nav-item > .active{
+    color: #17a2b8;
 }
