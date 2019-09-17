@@ -1,17 +1,26 @@
-import React, { Fragment } from 'react';
-import logo from './logo.svg';
+import React, { Component,lazy,Suspense } from 'react';
 import './App.scss';
 import NavBar from './component/Navbar/NavBar';
-import WebIntro from './component/WebIntro/WebIntro';
+// import WebIntro from './component/WebIntro/WebIntro';
 import About from './component/About/About';
+import Loading from './component/common/Loading/Loading';
+const WebIntro = lazy(()=> import('./component/WebIntro/WebIntro'))
 
 function App() {
   return (
-    <Fragment>
+  
+    <div id='page-container' >
       <NavBar />
-      <WebIntro />
-      <About />
-    </Fragment>
+      <Suspense fallback={<Loading />}>
+        <WebIntro />
+        </Suspense>
+      <Suspense fallback={<Loading />}>
+        <About />
+      </Suspense>
+      
+
+    </div>
+
   );
 }
 
