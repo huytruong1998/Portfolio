@@ -1,8 +1,140 @@
 .about-container {
     height: 100vh;
+    
 }
 
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+   grid-gap: 1rem;
+       box-sizing: border-box;
+}
+
+
+.aboutintro{
+    width: 80%;
+    text-align: center;
+    margin-right: auto; 
+     margin-left: auto;
+    .twoline{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &:before {
+            left: 0;
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 35%;
+            border-bottom: 8px solid rgba(0, 0, 0, 0.25);
+            content: "";
+        }
+
+        &:after {
+            right: 0;
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 35%;
+            border-bottom: 8px solid rgba(0, 0, 0, 0.25);
+            content: "";
+        }
+    }
+
+    
+
+}
+.about-info{
+    width: 70%;
+    text-align: center;
+   margin-right: auto; 
+     margin-left: auto;
+    .img-wrapper {
+        overflow: hidden;
+        img {
+            transition: transform .5s ease;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.about-skills{
+   
+    .bar-flex{
+        max-width: 90%;
+        height: 34px;
+        margin-bottom: 20px;
+         margin-left: auto;
+           margin-right: auto;
+        font-size: 11pt;
+        align-items: flex-end;
+        background-color: #eee;
+        position: relative;
+        color: #666;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span{
+            padding: 0 15px 0 0;
+        }
+    }
+    .bar-fill{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #49a5bf;
+        padding: 0;
+        opacity: 1;
+        height: 100%;
+    }
+    .tag-bold-flex{
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: #04C2C9;
+            color: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            font-weight: bold;
+    }
+}
+
+.about-text{
+    h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    p{
+        color: #616161;
+    }
+}
+
+
+@media (max-width: 924px) {
+    .grid-wrapper{
+        grid-template-columns: 1fr;
+        grid-row-gap: 5em;
+    }
+
+    .about-container {
+    height: 170vh;
+    }
+
+    .about-skills{
+       .bar-flex{
+           margin-left: auto;
+           margin-right: auto;
+       }
+    }
 }
