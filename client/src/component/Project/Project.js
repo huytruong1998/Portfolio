@@ -90,6 +90,18 @@ export default class Project extends Component {
                 gallery: [fitapp2, fitapp3, fitapp4]
             },
             {
+                name: 'WorkAround',
+                header: 'A job finding and hirin app',
+                info: "This is an app that connect people who need job and those who want a problem solve. In this app, I work in a group and I handle the Notification and MyJob and the authentication process",
+                desc: 'Ionic + Angular + Typescript + Firebase',
+                frontend: 'Ionic +Angular + Typescript',
+                gitHub: 'https://github.com/fayjusss/work-around',
+                backend: 'Firebase',
+                img: workaround,
+                gallery: [workaround2, workaround3, workaround4],
+                mobile: "Download Ionic View and to view the app enter code: 92df680f"
+            },
+            {
                 name: 'Job Management',
                 header: 'A job management list',
                 frontend: 'React +Redux',
@@ -99,18 +111,6 @@ export default class Project extends Component {
                 link:'https://todolist990.herokuapp.com/',
                 img: todolist,
                 gallery: [todolist2]
-            },
-            {
-                name: 'WorkAround',
-                header: 'A job finding and hirin app',
-                info: "This is an app that connect people who need job and those who want a problem solve. In this app, I work in a group and I handle the Notification and MyJob and the authentication process",
-                desc: 'Ionic + Angular + Typescript + Firebase',
-                frontend: 'Ionic +Angular + Typescript',
-                gitHub: 'https://github.com/fayjusss/work-around',
-                backend:'Firebase',
-                img: workaround,
-                gallery:[workaround2,workaround3,workaround4],
-                mobile:"Download Ionic View and to view the app enter code: 92df680f"
             }
         ]
         return (

@@ -63,7 +63,7 @@ import { connect } from 'react-redux';
                     >
                             {props => (
                                 <div className="contactintro" >
-                                    <h1 className='twoline' style={props}>ABOUT</h1>
+                                    <h1 className='twoline' style={props}>CONTACT</h1>
                                 </div>
                             )}
                     </Spring>
