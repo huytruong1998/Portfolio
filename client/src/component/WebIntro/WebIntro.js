@@ -3,6 +3,7 @@ import './WebIntro.scss';
 import MilkyWay from '../../video/MilkyWay.mov';
 import { Link } from 'react-scroll';
 import LazyLoad from 'react-lazyload';
+import Loading from '../common/Loading/Loading';
 
 export default class WebIntro extends Component {
     render() {
