@@ -155,7 +155,7 @@ export default class Project extends Component {
 class ProjectItem extends Component{
      
     render(){
-        const { dataskill, descinfo, openmodal, CloseHandler,number } = this.props;
+        const { dataskill, descinfo, openmodal, OpenHandler, CloseHandler,number } = this.props;
         return(
             <React.Fragment>
                 {openmodal ? <Modal CloseHandler={CloseHandler} descinfo={descinfo}/> : null}
@@ -174,7 +174,7 @@ class ProjectItem extends Component{
                                 </h1>
                                 <p>{dataskill.desc}</p>
 
-                                <button className='btn'>View More</button>
+                                <button onClick={OpenHandler} className='btn'>View More</button>
                             </div>
                         </div>
                     )}
