@@ -14,7 +14,7 @@ export default class NavBar extends Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 300;
+            const isTop = window.scrollY < 150;
             if (isTop === true) {
                 this.setState({ onscroll: false });
 
