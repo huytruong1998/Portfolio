@@ -1,6 +1,8 @@
+$buttonhover:#17A2B8;
+
 .webintro {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
@@ -59,16 +61,44 @@
     }
 
     p {
+        padding-top: .5rem;
         font-size: 1.5rem;
         display: block;
         padding-bottom: 2rem;
     }
 }
 
-.btn {
-    background: #49a5bf;
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
+
+
+.button{
+  border-radius: 3px;
+  padding: 0.6rem 1.2rem;
+  width: 200px;
+  display: block;
+  
+  border: 2px solid #fff;
+    margin: auto;
+  background: linear-gradient(to right, $buttonhover 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  &:hover{
+      border: 2px solid $buttonhover;
+      background-position: left bottom;
+      .text{
+          color: white;
+          
+      }
+  }
+
+  .text {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 30px; 
+  color: white;
+  transition: all .6s ease-out;
+  display: block;
+    }
+    
 }

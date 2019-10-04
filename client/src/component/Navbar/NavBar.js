@@ -28,7 +28,7 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav className={this.state.onscroll ? "navbar bg-dark scrolled" : "navbar bg-dark"}>
+            <nav id='navbar' className={this.state.onscroll ? "navbar bg-dark scrolled" : "navbar bg-dark"}>
                 <ul >
                     <li className='nav-item'>
                     <Link

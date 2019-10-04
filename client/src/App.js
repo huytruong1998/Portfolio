@@ -1,25 +1,31 @@
-import React, { Component,lazy,Suspense } from 'react';
+import React from 'react';
 import './App.scss';
 import NavBar from './component/Navbar/NavBar';
-// import WebIntro from './component/WebIntro/WebIntro';
+import { Provider } from 'react-redux';
+import store from './store';
+import WebIntro from './component/WebIntro/WebIntro';
 import About from './component/About/About';
-import Loading from './component/common/Loading/Loading';
-const WebIntro = lazy(()=> import('./component/WebIntro/WebIntro'))
+import Project from './component/Project/Project';
+import Contact from './component/Contact/Contact';
+
+
 
 function App() {
   return (
+    <Provider store={store}>
+        <div id='page-container' >
+          <div className="root">
+            <NavBar />       
+            <WebIntro /> 
+            <About />   
+            <Project />
+            <Contact />
+          </div>
+        </div>
   
-    <div id='page-container' >
-      <NavBar />
-      <Suspense fallback={<Loading />}>
-        <WebIntro />
-        </Suspense>
-      <Suspense fallback={<Loading />}>
-        <About />
-      </Suspense>
       
-
-    </div>
+    </Provider>
+    
 
   );
 }
