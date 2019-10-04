@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './About.scss';
-import profile from '../../img/profile.png';
+import profile from '../../img/profile.jpg';
 import LazyLoad from 'react-lazyload';
 import Loading from '../common/Loading/Loading';
 import { Spring } from 'react-spring/renderprops';
