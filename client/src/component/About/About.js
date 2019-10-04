@@ -64,7 +64,7 @@ export default class About extends Component {
         const skillData =[
             {
                 name:'HTML',
-                progress: 75
+                progress: 85
             },
             {
                 name: 'CSS',
@@ -76,7 +76,7 @@ export default class About extends Component {
             },
             {
                 name: 'React',
-                progress: 80
+                progress: 75
             },
             {
                 name: 'Nodejs',
