@@ -99,7 +99,7 @@ class ExperienceItem extends Component {
                 <span class="alignleft">
                   <img
                     src={dataskill.company}
-                    style={{ height: "30px" }}
+                    style={{ maxHeight: "1.75em", maxWidth: "8.5em" }}
                     alt=""
                   />
                 </span>
