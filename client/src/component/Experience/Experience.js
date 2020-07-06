@@ -20,8 +20,8 @@ export default class Experience extends Component {
           `Working closely with customer support to solve the customer problem effectively`,
         ],
         duration: "02/2020 - presents",
-        contactPerson: "Fabian",
-        contactPersonInfo: "@mailbutler.io",
+        contactPerson: "Fabian Jäger",
+        contactPersonInfo: "info@mailbutler.io",
       },
       {
         company: smilee,
