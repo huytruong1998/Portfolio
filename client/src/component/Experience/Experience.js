@@ -12,12 +12,13 @@ export default class Experience extends Component {
     const infoData = [
       {
         company: mailbutler,
-        position: "Internship",
+        position: "Web Developer",
         location: "Berlin, Germany",
         responsibility: [
-          `Development: I'm responsible for implemting new feature, fix bugs and errors, testing for web application website, chrome extension and mobile projects.`,
-          `Teamworks: work together with 5-6 developers throughtout all the projects`,
-          `Working closely with customer support to solve the customer problem effectively`,
+          `Work in production environment projects has outlook add-ins, chrome extension for Gmail, SPA dashboard and mobile applications.`,
+          `Front-end mainly used Vue.js, with SASS as compiler and basic HTML.`,
+          `Work with Cordova for IOS/Android mobile application`,
+          `Write E2E and Unit test with Jest and Puppeteer across all projects`,
         ],
         duration: "02/2020 - presents",
         contactPerson: "Fabian Jäger",
