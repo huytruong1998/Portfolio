@@ -16,7 +16,7 @@ export default class Experience extends Component {
         location: "Berlin, Germany",
         responsibility: [
           `Work in production environment projects has outlook add-ins, chrome extension for Gmail, SPA dashboard and mobile applications.`,
-          `Front-end mainly used Vue.js, with SASS as compiler and basic HTML.`,
+          `Front-end mainly used Vue.js, Typescript as compiler language, SASS as scripting language and basic HTML.`,
           `Work with Cordova for IOS/Android mobile application`,
           `Write E2E and Unit test with Jest and Puppeteer across all projects`,
         ],
@@ -29,7 +29,7 @@ export default class Experience extends Component {
         position: "Trainee",
         location: "Oulu, Finland",
         responsibility: [
-          `Development: I'm responsible for finding implementing new feature, fixing bugs, errors for web application .`,
+          `Small but growing company. Mainly work with React Redux, SASS is used as compiler. First contact with GraphQL and how it implemented with the project. `,
         ],
         duration: "11/2019 - 01/2020",
         contactPerson: "Jesse Lumme",
@@ -40,7 +40,7 @@ export default class Experience extends Component {
         position: "Trainee",
         location: "Oulu, Finland",
         responsibility: [
-          `Development: I'm responsible for finding implementing new feature fix bugs, errors for web application .`,
+          `Work in a small team of developer. SPA front-end development.Work front-end using React as Framework and Redux as state container. `,
         ],
         duration: "03/2019 - 04/2019",
         contactPerson: "Tommi Tallagren",
