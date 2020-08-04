@@ -149,10 +149,10 @@ export default class About extends Component {
                       <h2>Hi, I'm Huy.</h2>
 
                       <p>
-                        I'm a full-stack developer from Finland. I love creating
+                        I'm a web developer from Finland. I love creating
                         responsive website with cool animations, UI effects and
                         dynamic user experiences. My hobby is going to the gym
-                        and playing video games{" "}
+                        and playing video games
                       </p>
                     </div>
                   )}
