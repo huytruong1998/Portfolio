@@ -57,6 +57,10 @@ export default class About extends Component {
       },
       {
         name: "CSS",
+        progress: 75,
+      },
+      {
+        name: "SASS",
         progress: 70,
       },
       {
@@ -64,12 +68,24 @@ export default class About extends Component {
         progress: 85,
       },
       {
+        name: "Typescript",
+        progress: 80,
+      },
+      {
         name: "Vue",
-        progress: 85,
+        progress: 80,
       },
       {
         name: "React",
         progress: 80,
+      },
+      {
+        name: "Cordova",
+        progress: 75,
+      },
+      {
+        name: "Jest and Puppeteer",
+        progress: 70,
       },
       {
         name: "Nodejs",
@@ -78,18 +94,6 @@ export default class About extends Component {
       {
         name: "MongoDB",
         progress: 60,
-      },
-      {
-        name: "Jest",
-        progress: 70,
-      },
-      {
-        name: "Postgresql",
-        progress: 50,
-      },
-      {
-        name: "Sass",
-        progress: 40,
       },
     ];
     return (
