@@ -5,10 +5,11 @@ import devrforum from "../../img/devforum.jpg";
 import devrforum1 from "../../img/devforum1.PNG";
 import devrforum2 from "../../img/devforum2.PNG";
 import devrforum3 from "../../img/devforum3.PNG";
-import fitapp from "../../img/fitapp.jpg";
-import fitapp2 from "../../img/fitapp2.PNG";
-import fitapp3 from "../../img/fitapp3.PNG";
-import fitapp4 from "../../img/fitapp4.PNG";
+import hotts2 from "../../img/hotts1.png";
+import hotts from "../../img/hotts2.png";
+import hotts3 from "../../img/hotts3.png";
+import hotts1 from "../../img/hotts4.png";
+import hotts4 from "../../img/hotts5.png";
 import ShopMe from "../../img/ShopMe.jpg";
 import ShopMe2 from "../../img/ShopMe2.PNG";
 import ShopMe3 from "../../img/ShopMe3.PNG";
@@ -42,6 +43,20 @@ export default class Project extends Component {
   render() {
     const infoData = [
       {
+        name: "HOTTS",
+        header: `A Discussion rating website based on "Reddit"`,
+        desc: "Nextjs(React) + TypeScript + Grahql + Postgres",
+        info:
+          "This a discussion forum were developer can create post, rate each other post and interact with each other.",
+        frontend:
+          "Nextjs(React) + TypeScript + URQL/Graphql +Chakra UI",
+        backend: " PostgreSQL + Nodejs + Redis + TypeGraphQL + MikroORM/TypeORM",
+        gitHub: "https://github.com/huy9903098/basic-reddit-graphql-react",
+        link: "https://hotts.org/",
+        img: hotts,
+        gallery: [hotts1, hotts2, hotts3, hotts4],
+      },
+      {
         name: "DevForum",
         header: "A Forum for Developer",
         desc: "React + Redux + MongoDB + Nodejs",
@@ -53,6 +68,17 @@ export default class Project extends Component {
         link: "https://radiant-hollows-68283.herokuapp.com/",
         img: devrforum,
         gallery: [devrforum1, devrforum2, devrforum3],
+      },
+
+      {
+        name: "Spartan",
+        header: "website with some cool design",
+        desc: "React + HTML + Bootstrap + CSS + SCSS",
+        frontend: "React + HTML +Bootstrap+ CSS + SCSS",
+        gitHub: "https://github.com/huy9903098/highend",
+        link: "https://spartan678.herokuapp.com/",
+        img: spartan,
+        gallery: [spartan],
       },
       {
         name: "ShopMe",
@@ -66,29 +92,6 @@ export default class Project extends Component {
         link: "https://shoppingapp234.herokuapp.com/",
         img: ShopMe,
         gallery: [ShopMe2, ShopMe3, ShopMe4],
-      },
-      {
-        name: "Spartan",
-        header: "website with some cool design",
-        desc: "React + HTML + Bootstrap + CSS + SCSS",
-        frontend: "React + HTML +Bootstrap+ CSS + SCSS",
-        gitHub: "https://github.com/huy9903098/highend",
-        link: "https://spartan678.herokuapp.com/",
-        img: spartan,
-        gallery: [spartan],
-      },
-      {
-        name: "Fit App",
-        header: "A fitness website",
-        frontend: "React +Redux",
-        info:
-          "This is a fitness website for people to calculate calories based on consumption and workout",
-        backend: " Nodejs + Express + MongoDB",
-        desc: "React + Redux + MongoDB + Nodejs",
-        gitHub: "https://github.com/huy9903098/frStudie",
-        link: "https://calm-waters-76421.herokuapp.com/",
-        img: fitapp,
-        gallery: [fitapp2, fitapp3, fitapp4],
       },
       {
         name: "WorkAround",

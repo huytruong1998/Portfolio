@@ -12,7 +12,7 @@ export default class Experience extends Component {
     const infoData = [
       {
         company: mailbutler,
-        position: "Web Developer",
+        position: "Intern",
         location: "Berlin, Germany",
         responsibility: [
           `Work in production environment projects has outlook add-ins, chrome extension for Gmail, SPA dashboard and mobile applications.`,
@@ -20,7 +20,7 @@ export default class Experience extends Component {
           `Work with Cordova for IOS/Android mobile application`,
           `Write E2E and Unit test with Jest and Puppeteer across all projects`,
         ],
-        duration: "02/2020 - presents",
+        duration: "02/2020 - 08/2020",
         contactPerson: "Fabian Jäger",
         contactPersonInfo: "info@mailbutler.io",
       },
