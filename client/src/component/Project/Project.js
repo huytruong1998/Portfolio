@@ -48,9 +48,9 @@ export default class Project extends Component {
         desc: "Nextjs(React) + TypeScript + Grahql + Postgres",
         info:
           "This a discussion forum were developer can create post, rate each other post and interact with each other.",
-        frontend:
-          "Nextjs(React) + TypeScript + URQL/Graphql +Chakra UI",
-        backend: " PostgreSQL + Nodejs + Redis + TypeGraphQL + MikroORM/TypeORM",
+        frontend: "Nextjs(React) + TypeScript + URQL/Graphql +Chakra UI",
+        backend:
+          " PostgreSQL + Nodejs + Redis + TypeGraphQL + MikroORM/TypeORM",
         gitHub: "https://github.com/huy9903098/basic-reddit-graphql-react",
         link: "https://hotts.org/",
         img: hotts,
@@ -81,6 +81,17 @@ export default class Project extends Component {
         gallery: [spartan],
       },
       {
+        name: "Job Management",
+        header: "A job management list",
+        frontend: "React +Redux",
+        info: "Create a list of job to do",
+        desc: "React + Redux + localStorage",
+        gitHub: "https://github.com/huy9903098/todolist",
+        link: "https://todolist990.herokuapp.com/",
+        img: todolist,
+        gallery: [todolist2],
+      },
+      {
         name: "ShopMe",
         header: "A shopping website for store",
         desc: "React + Redux + Postgresql + Nodejs",
@@ -105,17 +116,6 @@ export default class Project extends Component {
         img: workaround,
         gallery: [workaround2, workaround3, workaround4],
         mobile: "Download Ionic View and to view the app enter code: 92df680f",
-      },
-      {
-        name: "Job Management",
-        header: "A job management list",
-        frontend: "React +Redux",
-        info: "Create a list of job to do",
-        desc: "React + Redux + localStorage",
-        gitHub: "https://github.com/huy9903098/todolist",
-        link: "https://todolist990.herokuapp.com/",
-        img: todolist,
-        gallery: [todolist2],
       },
     ];
     return (
