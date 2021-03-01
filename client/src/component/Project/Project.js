@@ -64,7 +64,7 @@ export default class Project extends Component {
         name: 'DineRestaurant',
         header: 'A Resturant Website',
         desc: 'React + HTML + SASS',
-        info: `This an online frontend challange to recreate a website from Frontend Mentor (https://www.frontendmentor.io/challenges), i was provide with the image set to work with.`,
+        info: `This an online frontend challange to recreate a website from Frontend Mentor (https://www.frontendmentor.io/challenges), i was provide with the image set to work with. Below is my solutions using React with SASS`,
         frontend: 'React + HTML + SASS',
         gitHub: 'https://github.com/huy9903098/DineRestaurant',
         link: 'https://dinerestaurant.herokuapp.com/',
