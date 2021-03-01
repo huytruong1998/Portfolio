@@ -1,50 +1,50 @@
-import React, { Component } from "react";
-import LazyLoad from "react-lazyload";
-import { Spring } from "react-spring/renderprops";
-import mailbutler from "../../img/MB_Logo.jpg";
-import softagram from "../../img/sg-logo.png";
-import smilee from "../../img/smilee.png";
-import Loading from "../common/Loading/Loading";
-import "./Experience.scss";
+import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
+import { Spring } from 'react-spring/renderprops';
+import mailbutler from '../../img/MB_Logo.jpg';
+import softagram from '../../img/sg-logo.png';
+import smilee from '../../img/smilee.png';
+import Loading from '../common/Loading/Loading';
+import './Experience.scss';
 
 export default class Experience extends Component {
   render() {
     const infoData = [
       {
         company: mailbutler,
-        position: "Intern",
-        location: "Berlin, Germany",
+        position: 'Intern',
+        location: 'Berlin, Germany',
         responsibility: [
           `Work in production environment projects has outlook add-ins, chrome extension for Gmail, SPA dashboard and mobile applications.`,
           `Front-end mainly used Vue.js, Typescript as compiler language, SASS as scripting language and basic HTML.`,
           `Work with Cordova for IOS/Android mobile application`,
           `Write E2E and Unit test with Jest and Puppeteer across all projects`,
         ],
-        duration: "02/2020 - 08/2020",
-        contactPerson: "Fabian Jäger",
-        contactPersonInfo: "info@mailbutler.io",
+        duration: '02/2020 - 08/2020',
+        contactPerson: 'Fabian Jäger',
+        contactPersonInfo: 'info@mailbutler.io',
       },
       {
         company: smilee,
-        position: "Trainee",
-        location: "Oulu, Finland",
+        position: 'Trainee',
+        location: 'Oulu, Finland',
         responsibility: [
           `Small but growing company. Mainly work with React Redux, SASS is used as compiler. First contact with GraphQL and how it implemented with the project. `,
         ],
-        duration: "11/2019 - 01/2020",
-        contactPerson: "Jesse Lumme",
-        contactPersonInfo: "jesse.lumme@smilee.io",
+        duration: '11/2019 - 01/2020',
+        contactPerson: 'Jesse Lumme',
+        contactPersonInfo: 'jesse.lumme@smilee.io',
       },
       {
         company: softagram,
-        position: "Trainee",
-        location: "Oulu, Finland",
+        position: 'Trainee',
+        location: 'Oulu, Finland',
         responsibility: [
           `Work in a small team of developer. SPA front-end development.Work front-end using React as Framework and Redux as state container. `,
         ],
-        duration: "03/2019 - 04/2019",
-        contactPerson: "Tommi Tallagren",
-        contactPersonInfo: "tommi.tallgren@softagram.com",
+        duration: '03/2019 - 04/2019',
+        contactPerson: 'Tommi Tallagren',
+        contactPersonInfo: 'tommi.tallgren@softagram.com',
       },
     ];
     return (
@@ -89,8 +89,8 @@ class ExperienceItem extends Component {
     return (
       <React.Fragment>
         <Spring
-          from={{ opacity: 0, transform: "scale(0.5)" }}
-          to={{ opacity: 1, transform: "scale(1)" }}
+          from={{ opacity: 0, transform: 'scale(0.5)' }}
+          to={{ opacity: 1, transform: 'scale(1)' }}
           config={{ duration: 500 }}
           delay={number * 200}
         >
@@ -100,7 +100,7 @@ class ExperienceItem extends Component {
                 <span class="alignleft">
                   <img
                     src={dataskill.company}
-                    style={{ maxHeight: "1.75em", maxWidth: "8.5em" }}
+                    style={{ maxHeight: '1.75em', maxWidth: '8.5em' }}
                     alt=""
                   />
                 </span>
@@ -120,7 +120,7 @@ class ExperienceItem extends Component {
                 </ul>
               </div>
               <p>
-                <span style={{ fontWeight: "bold" }}>Contact person: </span>
+                <span style={{ fontWeight: 'bold' }}>Contact person: </span>
                 {dataskill.contactPerson} - {dataskill.contactPersonInfo}
               </p>
             </div>

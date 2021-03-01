@@ -1,29 +1,33 @@
-import React, { Component } from "react";
-import LazyLoad from "react-lazyload";
-import { Spring } from "react-spring/renderprops";
-import devrforum from "../../img/devforum.jpg";
-import devrforum1 from "../../img/devforum1.PNG";
-import devrforum2 from "../../img/devforum2.PNG";
-import devrforum3 from "../../img/devforum3.PNG";
-import hotts2 from "../../img/hotts1.png";
-import hotts from "../../img/hotts2.png";
-import hotts3 from "../../img/hotts3.png";
-import hotts1 from "../../img/hotts4.png";
-import hotts4 from "../../img/hotts5.png";
-import ShopMe from "../../img/ShopMe.jpg";
-import ShopMe2 from "../../img/ShopMe2.PNG";
-import ShopMe3 from "../../img/ShopMe3.PNG";
-import ShopMe4 from "../../img/ShopMe4.PNG";
-import spartan from "../../img/spartan.jpg";
-import todolist from "../../img/todolist.PNG";
-import todolist2 from "../../img/todolist2.PNG";
-import workaround from "../../img/workaround.jpg";
-import workaround2 from "../../img/workaround2.jpg";
-import workaround3 from "../../img/workaround3.jpg";
-import workaround4 from "../../img/workaround4.jpg";
-import Loading from "../common/Loading/Loading";
-import Modal from "../Modal/Modal";
-import "./Project.scss";
+import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
+import { Spring } from 'react-spring/renderprops';
+import devrforum from '../../img/devforum.jpg';
+import devrforum1 from '../../img/devforum1.PNG';
+import devrforum2 from '../../img/devforum2.PNG';
+import devrforum3 from '../../img/devforum3.PNG';
+
+import hotts2 from '../../img/hotts1.png';
+import hotts from '../../img/hotts2.png';
+import hotts3 from '../../img/hotts3.png';
+import hotts1 from '../../img/hotts4.png';
+import hotts4 from '../../img/hotts5.png';
+
+import Dine1 from '../../img/dine1.png';
+import Dine2 from '../../img/dine2.png';
+import Dine3 from '../../img/dine3.png';
+
+import spartan from '../../img/spartan.jpg';
+
+import todolist from '../../img/todolist.PNG';
+import todolist2 from '../../img/todolist2.PNG';
+
+import workaround from '../../img/workaround.jpg';
+import workaround2 from '../../img/workaround2.jpg';
+import workaround3 from '../../img/workaround3.jpg';
+import workaround4 from '../../img/workaround4.jpg';
+import Loading from '../common/Loading/Loading';
+import Modal from '../Modal/Modal';
+import './Project.scss';
 
 export default class Project extends Component {
   state = {
@@ -43,79 +47,77 @@ export default class Project extends Component {
   render() {
     const infoData = [
       {
-        name: "HOTTS",
+        name: 'HOTTS',
         header: `A Discussion rating website based on "Reddit"`,
-        desc: "Nextjs(React) + TypeScript + Grahql + Postgres",
+        desc: 'Nextjs(React) + TypeScript + Grahql + Postgres',
         info:
-          "This a discussion forum were developer can create post, rate each other post and interact with each other.",
-        frontend: "Nextjs(React) + TypeScript + URQL/Graphql +Chakra UI",
+          'This a discussion forum were developer can create post, rate each other post and interact with each other.',
+        frontend: 'Nextjs(React) + TypeScript + URQL/Graphql +Chakra UI',
         backend:
-          " PostgreSQL + Nodejs + Redis + TypeGraphQL + MikroORM/TypeORM",
-        gitHub: "https://github.com/huy9903098/basic-reddit-graphql-react",
-        link: "https://hotts.org/",
+          ' PostgreSQL + Nodejs + Redis + TypeGraphQL + MikroORM/TypeORM',
+        gitHub: 'https://github.com/huy9903098/basic-reddit-graphql-react',
+        link: 'https://hotts.org/',
         img: hotts,
         gallery: [hotts1, hotts2, hotts3, hotts4],
       },
       {
-        name: "DevForum",
-        header: "A Forum for Developer",
-        desc: "React + Redux + MongoDB + Nodejs",
+        name: 'DineRestaurant',
+        header: 'A Resturant Website',
+        desc: 'React + HTML + SASS',
+        info: `This an online frontend challange to recreate a website from Frontend Mentor (https://www.frontendmentor.io/challenges), i was provide with the image set to work with.`,
+        frontend: 'React + HTML + SASS',
+        gitHub: 'https://github.com/huy9903098/DineRestaurant',
+        link: 'https://dinerestaurant.herokuapp.com/',
+        img: Dine1,
+        gallery: [Dine2, Dine3],
+      },
+      {
+        name: 'DevForum',
+        header: 'A Forum for Developer',
+        desc: 'React + Redux + MongoDB + Nodejs',
         info:
-          "This a developer forum were developer can create post, share opinions and interact with each other",
-        frontend: "React +Redux",
-        backend: " Nodejs + Express + MongoDB",
-        gitHub: "https://github.com/huy9903098/DevForum",
-        link: "https://radiant-hollows-68283.herokuapp.com/",
+          'This a developer forum were developer can create post, share opinions and interact with each other',
+        frontend: 'React +Redux',
+        backend: ' Nodejs + Express + MongoDB',
+        gitHub: 'https://github.com/huy9903098/DevForum',
+        link: 'https://radiant-hollows-68283.herokuapp.com/',
         img: devrforum,
         gallery: [devrforum1, devrforum2, devrforum3],
       },
-
       {
-        name: "Spartan",
-        header: "website with some cool design",
-        desc: "React + HTML + Bootstrap + CSS + SCSS",
-        frontend: "React + HTML +Bootstrap+ CSS + SCSS",
-        gitHub: "https://github.com/huy9903098/highend",
-        link: "https://spartan678.herokuapp.com/",
+        name: 'Spartan',
+        header: 'website with some cool design',
+        desc: 'React + HTML + Bootstrap + CSS + SCSS',
+        frontend: 'React + HTML +Bootstrap+ CSS + SCSS',
+        gitHub: 'https://github.com/huy9903098/highend',
+        link: 'https://spartan678.herokuapp.com/',
         img: spartan,
         gallery: [spartan],
       },
       {
-        name: "Job Management",
-        header: "A job management list",
-        frontend: "React +Redux",
-        info: "Create a list of job to do",
-        desc: "React + Redux + localStorage",
-        gitHub: "https://github.com/huy9903098/todolist",
-        link: "https://todolist990.herokuapp.com/",
+        name: 'Job Management',
+        header: 'A job management list',
+        frontend: 'React +Redux',
+        info: 'Create a list of job to do',
+        desc: 'React + Redux + localStorage',
+        gitHub: 'https://github.com/huy9903098/todolist',
+        link: 'https://todolist990.herokuapp.com/',
         img: todolist,
         gallery: [todolist2],
       },
+
       {
-        name: "ShopMe",
-        header: "A shopping website for store",
-        desc: "React + Redux + Postgresql + Nodejs",
+        name: 'WorkAround',
+        header: 'A job finding and hirin app',
         info:
-          "This a store website, the admin can manage the website and see customer order",
-        frontend: "React +Redux",
-        backend: " Nodejs + Express + Postgresql",
-        gitHub: "https://github.com/huy9903098/ProjStudie",
-        link: "https://shoppingapp234.herokuapp.com/",
-        img: ShopMe,
-        gallery: [ShopMe2, ShopMe3, ShopMe4],
-      },
-      {
-        name: "WorkAround",
-        header: "A job finding and hirin app",
-        info:
-          "This is an app that connect people who need job and those who want a problem solve. In this app, I work in a group and I handle the Notification and MyJob and the authentication process",
-        desc: "Ionic + Angular + Typescript + Firebase",
-        frontend: "Ionic +Angular + Typescript",
-        gitHub: "https://github.com/fayjusss/work-around",
-        backend: "Firebase",
+          'This is an app that connect people who need job and those who want a problem solve. In this app, I work in a group and I handle the Notification and MyJob and the authentication process',
+        desc: 'Ionic + Angular + Typescript + Firebase',
+        frontend: 'Ionic +Angular + Typescript',
+        gitHub: 'https://github.com/fayjusss/work-around',
+        backend: 'Firebase',
         img: workaround,
         gallery: [workaround2, workaround3, workaround4],
-        mobile: "Download Ionic View and to view the app enter code: 92df680f",
+        mobile: 'Download Ionic View and to view the app enter code: 92df680f',
       },
     ];
     return (
@@ -178,8 +180,8 @@ class ProjectItem extends Component {
           <Modal CloseHandler={CloseHandler} descinfo={descinfo} />
         ) : null}
         <Spring
-          from={{ opacity: 0, transform: "scale(0.5)" }}
-          to={{ opacity: 1, transform: "scale(1)" }}
+          from={{ opacity: 0, transform: 'scale(0.5)' }}
+          to={{ opacity: 1, transform: 'scale(1)' }}
           config={{ duration: 500 }}
           delay={number * 200}
         >
@@ -187,7 +189,7 @@ class ProjectItem extends Component {
             <div className="projectobject" style={props}>
               <div
                 className="imgdisplay"
-                style={{ backgroundImage: "url(" + dataskill.img + ")" }}
+                style={{ backgroundImage: 'url(' + dataskill.img + ')' }}
               ></div>
               <div className="show-desc">
                 <h1 className="project-title">{dataskill.name}</h1>
