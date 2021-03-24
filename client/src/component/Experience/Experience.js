@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
 import { Spring } from 'react-spring/renderprops';
+import coccon from '../../img/coccon.svg';
 import mailbutler from '../../img/MB_Logo.jpg';
 import softagram from '../../img/sg-logo.png';
 import smilee from '../../img/smilee.png';
@@ -10,6 +11,19 @@ import './Experience.scss';
 export default class Experience extends Component {
   render() {
     const infoData = [
+      {
+        company: coccon,
+        position: 'Web Developer',
+        location: 'Ho Chi Minh, VietNam',
+        responsibility: [
+          `Work in production environment projects for both Frontend and backend.`,
+          `Front-end used React.js, Redux and Apollo as state management. Implement new design, feature, fixing bugs and clean code `,
+          `Backend work with Node.js, Express and GraphQL. Implement new query and mutation, create new source code repo for IAC's REST service`,
+        ],
+        duration: '08/2020 - present',
+        contactPerson: 'Nguyễn Phương Duy',
+        contactPersonInfo: 'duyn@princeton.edu',
+      },
       {
         company: mailbutler,
         position: 'Intern',
@@ -30,6 +44,7 @@ export default class Experience extends Component {
         location: 'Oulu, Finland',
         responsibility: [
           `Small but growing company. Mainly work with React Redux, SASS is used as compiler. First contact with GraphQL and how it implemented with the project. `,
+          `Implement new design, feature and fixing bugs`,
         ],
         duration: '11/2019 - 01/2020',
         contactPerson: 'Jesse Lumme',
@@ -41,6 +56,7 @@ export default class Experience extends Component {
         location: 'Oulu, Finland',
         responsibility: [
           `Work in a small team of developer. SPA front-end development.Work front-end using React as Framework and Redux as state container. `,
+          `Implement new design, feature and fixing bugs`,
         ],
         duration: '03/2019 - 04/2019',
         contactPerson: 'Tommi Tallagren',
