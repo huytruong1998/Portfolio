@@ -21,7 +21,7 @@
     "express-validator": "^6.10.0",
     "googleapis": "^67.1.0",
     "gravatar": "^1.8.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.11.18",
     "moongoose": "0.0.5",
     "node-sass": "^4.14.1",
